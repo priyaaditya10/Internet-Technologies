@@ -35,7 +35,7 @@ class StaticStack extends Stack<Integer> {
 
     public void push(Integer e) throws Exception{
         if(this.top == (this.size - 1) ) {
-            throw new Exception("Stack is FULL");
+            throw new Exception("Stack overflow");
         }
         this.stack[++top] = e;
     }
