@@ -42,7 +42,7 @@ class StaticStack extends Stack<Integer> {
 
     public Integer pop() throws Exception {
         if(this.top == -1) {
-            throw new Exception("Stack is empty");
+            throw new Exception("Stack underflow");
         }
         return stack[top--];
     }
